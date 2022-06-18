@@ -1,0 +1,40 @@
+{
+  "readmeUrl": "https://raw.githubusercontent.com/koad/koad/master/README.md",
+  "title": "koad shell",
+  "name": "Jason Zvaniga",
+  "ascii": "koad-dot-sh",
+  "social": {
+    "github": "koad",
+    "keybase": "koad"
+  },
+  "email": "yourstruly@kingofalldata.com",
+  "ps1_hostname": "wonderland",
+  "ps1_username": "guest",
+  "ps1_entity": "alice",
+  "repo": "https://github.com/koad/sh",
+  "resume_url": "https://book.koad.sh",
+  "donate_urls": {
+    "github": "https://github.com/sponsors/koad/",
+    "bitcoin": ""
+  },
+  "colors": {
+    "light": {
+      "background": "#22272E",
+      "foreground": "#ADBAC2",
+      "yellow": "#5E81AC",
+      "green": "#A3BE8C",
+      "gray": "#88C0D0",
+      "blue": "#EBCB8B",
+      "red": "#BF616A"
+    },
+    "dark": {
+      "background": "#22272E",
+      "foreground": "#ADBAC2",
+      "yellow": "#5E81AC",
+      "green": "#A3BE8C",
+      "gray": "#88C0D0",
+      "blue": "#EBCB8B",
+      "red": "#BF616A"
+    }
+  }
+}
