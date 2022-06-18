@@ -5,8 +5,6 @@ services:
       context: .
       dockerfile: Dockerfile
       target: base
-    expose:
-      - '10.10.10.11:14122'
     ports:
       - '10.10.10.11:14122:3000'
     volumes:
