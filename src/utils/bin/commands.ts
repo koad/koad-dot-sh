@@ -154,3 +154,142 @@ build using the gifts from the following...
  <u><a href="https://linuxfoundation.org/">open source software</a>; sharing is caring!</u>
 `;
 };
+
+export const whoami = async (args: string[]): Promise<string> => {
+  return `${config.ps1_username}`;
+};
+
+export const ls = async (args: string[]): Promise<string> => {
+
+  if(args && args[0]){
+    return `
+drwxr-xr-x 131 guest        guest           4096 Jun 17 13:22  .
+drwxr-xr-x   3 root         root            4096 Mar 17  2021  ..
+drwxrwxr-x  26 guest        guest           4096 Jun 10 15:49  .alice/
+drwxrwxr-x  24 guest        guest           4096 Jun  8 16:08  .astro/
+drwxrwxr-x  17 guest        guest           4096 May 28 22:06  .bob/
+drwxrwxr-x  19 guest        guest           4096 May 30 13:19  .koad-io/
+`;
+  } else return `
+.alice     .astro      .bob        .koad-io
+`;
+};
+
+export const date = async (args: string[]): Promise<string> => {
+  return new Date().toString();
+};
+
+
+// TODO: make this stuff work
+export const exit = async (args: string[]): Promise<string> => {
+  // window.loggedInUser=null;
+  return `Where did you want to go?
+  `;
+};
+
+export const alice = async (args?: string[]): Promise<string> => {
+  // window.entity = 'alice'
+  return `
+alice is onboard, her enviroment loaded and is ready for action.
+  `;
+};
+
+export const astro = async (args?: string[]): Promise<string> => {
+  // window.entity = 'astro'
+  return `
+astro is onboard, it's enviroment loaded and is ready for action.
+  `;
+};
+
+export const bob = async (args?: string[]): Promise<string> => {
+  // window.entity = 'bob'
+  return `
+bob is onboard, his enviroment loaded and is ready for action.
+  `;
+};
+
+// TODO: Some things are too immature to share.
+export const knock = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const telnet = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const mount = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const ssh = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const cd = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const absorb = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const branch = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const checkout = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const decrypt = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const drop = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const find = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const learn = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const manage = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const open = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const push = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const restore = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const shortlog = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const start = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const verify = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const add = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const browse = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const clone = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const deploy = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const edit = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const follow = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const init = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const list = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const manpage = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const play = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const rekey = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const revoke = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const show = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const stash = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const tag = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const track = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const watch = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const archive = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const build = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const commit = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const destroy = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const encrypt = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const forge = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const inspect = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const locate = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const merge = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const pop = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const rebase = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const reset = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const rm = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const sign = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const tail = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const update = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const backup = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const detatch = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const enroll = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const generate = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const install = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const lock = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const mv = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const probe = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const reboot = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const resize = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const send = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const spawn = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const stop = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const test = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const upgrade = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const whoareyou = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const blame = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const check = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const create = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const diff = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const git = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const launch = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const log = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const notes = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const pull = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const receive = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const restart = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const shell = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const store = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const tldr = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const upload = async (args: string[]): Promise<string> => { return notAuthorized; };
+export const whois = async (args: string[]): Promise<string> => { return notAuthorized; };
