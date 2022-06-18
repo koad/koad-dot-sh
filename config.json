@@ -22,10 +22,10 @@
       "background": "#22272E",
       "foreground": "#ADBAC2",
       "yellow": "#5E81AC",
-      "green": "#A3BE8C",
-      "gray": "#88C0D0",
+      "green": "#EEEEEE",
+      "gray": "#999999",
       "blue": "#EBCB8B",
-      "red": "#BF616A"
+      "red": "#AAAAAA"
     },
     "dark": {
       "background": "#22272E",
