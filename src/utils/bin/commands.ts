@@ -25,13 +25,13 @@ about, alice, astro, banner, bob, clear, contact, credits, date, disco, discord,
 export const about = async (args: string[]): Promise<string> => {
   
 return `koad:lite-v8 v0.0.149
-<a class="text-light-blue dark:text-dark-blue underline" href="https://github.com/koad/io-lite-v8" target="_blank">github://koad/io-lite-v8</a>
+<a class="text-light-blue dark:text-dark-blue underline" href="https://github.com/koad/io-light" target="_blank">github://koad/io-light</a>
 
 An essentials only command prompt for the king while he is away from the kingdom.
 
 guests: for a full featured koad:io experience, consider <a class="text-light-blue dark:text-dark-blue underline" href="https://github.com/koad/io" target="_blank">github://koad/io</a>.
 
-use command 'contact' to display the author's information.
+use command 'contact' to display koad's contact information.
 
 `;
 };
