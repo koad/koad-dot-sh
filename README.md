@@ -92,7 +92,7 @@ astro is my personal digital assitant I spawned using [koad:io](https://github.c
 
 build using the gifts from the following...
 
- [meteorjs](https://www.meteor.com/)
- [Cveinnt's LiveTerm](https://github.com/Cveinnt/LiveTerm)
- which is based on [M4TT72's awesome Terminal](https://github.com/m4tt72/terminal)
- [open source software](https://linuxfoundation.org/)
+- [meteorjs](https://www.meteor.com/)
+- [Cveinnt's LiveTerm](https://github.com/Cveinnt/LiveTerm)
+- which is based on [M4TT72's awesome Terminal](https://github.com/m4tt72/terminal)
+- [open source software](https://linuxfoundation.org/)
