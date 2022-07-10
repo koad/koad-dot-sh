@@ -1,0 +1,107 @@
+:root {
+	 --application-hue: 220;         
+	 --application-saturation: 16;  
+	 --application-brightness: 22; 
+	 --text-hue: 220;         
+	 --text-saturation: 16;  
+	 --text-brightness: 75; 
+	 --application-transparency:  255;
+}
+
+@font-face {
+	font-family: 'Hack';
+	src: url(/assets/fonts/Hack-NF.ttf);
+	display: swap;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--highlight-color);
+    border-radius: 6px;
+}
+
+body{
+	background-color: hsl(var(--application-hue), var(--application-saturation-percent), var(--application-brightness-percent));
+}
+
+* {
+	font-family: 'Hack', monospace;
+	font-size: 16px;
+}
+
+a:hover{
+	color: white;
+}
+
+input{
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+	caret-color: white;
+}
+
+.white { color: #FFFFFF }
+.gray { color:  #BBBBBB }
+.brand-color { color:  #6081AC }
+
+.purple { color:  #800080 }
+.fuchsia { color: #FF00FF }
+.green { color: #008000 }
+.lime { color:  #00FF00 }
+.olive { color: #808000 }
+.yellow { color:  #FFFF00 }
+.navy { color:  #000080 }
+.red { color:  #ee0000 }
+
+
+.flex-row {
+	flex-direction: row;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-shrink {
+	flex-shrink: 1;
+}
+
+.flex-grow {
+	flex-grow: 3;
+}
+
+@media all and (display-mode: standalone) {
+	.site-container{
+		margin-top: 0px;
+	}
+}
+
+.site-container{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 9px;
+	border:  1px solid var(--fill-color);
+	border-radius: 9px;
+	padding: 1px;
+}
+
+.interface-container{
+	height: 100%;
+	width: 100%;
+	padding: 20px;
+	border-radius: 9px;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.48);
+
+	-webkit-text-size-adjust: 100%;
+	-moz-tab-size: 3;
+	-o-tab-size: 3;
+	tab-size: 3;
+}
+
+.output-text{
+	white-space: pre-wrap; 
+	overflow-x: auto; 
+}

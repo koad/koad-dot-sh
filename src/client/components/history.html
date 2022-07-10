@@ -1,0 +1,14 @@
+
+<template name="history">
+	{{#each entries}}
+		<div key="{{entry.command}}{{index}}">
+			{{> Prompt this}}
+			{{#if output}}
+				<div class="output-text">{{{output}}}</div>
+			{{else}}
+				<br>
+			{{/if}}
+			<br>
+		</div>
+	{{/each}}
+</template>
