@@ -2,7 +2,7 @@
 
 this source code is what makes up the site at [koad.sh](https://koad.sh).
 
-![screenshot](/screenshot.png?raw=true "Title")
+![screenshot](/screen-shot.png?raw=true "Title")
 
 
 ## what?
