@@ -8,8 +8,8 @@
 /volumes
 
 # production
+/latest
 /builds
-
 
 # debug
 *.log*
