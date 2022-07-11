@@ -1,0 +1,56 @@
+{
+	"private": {
+		"secrets": []
+	},
+ 	"public": {
+	    "title": "koad shell",
+	    "ascii": "koad-dot-sh",
+	    "name": "Jason Zvaniga",
+	    "readmeUrl": "https://book.koad.sh",
+	    "email": "yourstruly@kingofalldata.com",
+	    "repo": "https://github.com/koad/koad-dot-sh",
+	    "resume_url": "https://raw.githubusercontent.com/koad/koad/master/README.md",
+	    "social": {
+	      "github": "koad",
+	      "keybase": "koad"
+	    },
+	    "guest_mode": {
+	      "hostname": "wonderland",
+	      "username": "guest",
+	      "entity": "alice"
+	    },
+	    "tip_jar": {
+	      "github": "https://github.com/sponsors/koad/",
+	      "bitcoin": "bc1qvdwh05qzmp2va220tzzdeaarseqgh9dty5zxaq",
+	      "dogecoin": "DRtawKXMGyynB5Lr5uStHJNUA4dvQWtiWe",
+	      "litecoin": "LZ9ThKdpyQoBoCcnSeytiXVZ7BJZ6aUgDw",
+	      "canadaecoin": "CduFQRWgT757NGcLbUJeL731RNZmz7PkCo"
+	    },
+		"application":{
+			"version": "0.2.0",
+			"name": "koad-dot-sh",
+			"title": "koad's personal website.",
+			"tagline": "",
+			"logo": "/logo.png"
+		},
+		"rootUrl": "https://koad.sh/",
+		"copyright": "Jason Zvaniga",
+		"ident": {
+			"_id": "ASTRO-24R-2207",
+			"instance": "ASTRO-24R-2207-6616f6c66769b6666176c44e61",
+			"home": "https://koad.sh/",
+			"host": "199.241.187.130",
+			"ingress": "lenoir",
+			"hostname": "koad.sh",
+			"contact": "koad",
+			"location": {
+				"City": "Hespeler",
+				"Country": "Canada",
+				"Continent": "North America",
+				"Time Zone": "Toronto",
+				"Latitude": "",
+				"Longitude": ""
+			}
+		}
+	}
+}
