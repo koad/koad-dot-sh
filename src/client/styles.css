@@ -15,12 +15,13 @@
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: var(--highlight-color);
+    background-color: #2E3440aa;
     border-radius: 6px;
 }
 
 body{
-	background-color: hsl(var(--application-hue), var(--application-saturation-percent), var(--application-brightness-percent));
+	background-color: #2E3440;
+	color: #adbac7;
 }
 
 * {
