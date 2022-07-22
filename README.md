@@ -22,7 +22,7 @@ I post this code on github because I need examples to show people how to use [gi
 
 ### start local
 
-grab a local copy, and throw it in your entites 'sites' directory as a folder named as the site you want to host.
+grab a local copy, and throw it in your koad:io entity's 'sites' directory as a folder named as the site you want to host.
 
 ```bash
 git clone https://github.com/koad/koad-dot-sh.git ~/.astro/sites/koad.sh
@@ -43,7 +43,7 @@ astro start
 ```
 
 ### connect to shell
-to the locally running runtime enviroment
+to the locally running runtime environment
 ```bash
 astro shell
 ```
@@ -85,7 +85,7 @@ astro restart koad.sh
 
 ## reference:
 
-astro is my personal digital assitant I spawned using [koad:io](https://github.com/koad/io/).
+astro is my personal digital assistant I spawned using [koad:io](https://github.com/koad/io/).
 - [github://koad/io/](https://github.com/koad/io/)
 - [book://koad-io/entity](https://book.koad.sh/reference/koad-io/entity/?h=koad+io#what)
 
