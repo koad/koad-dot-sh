@@ -41,6 +41,11 @@ commands["matrix"] = function(args){
   return `opened invite to koad's live matrix space in browser window `;
 };
 
+commands["onlyfans"] = function(args){
+  window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank'); // ...I'm sorry
+  return `opened 'onlyfans' in browser window, lol.`;
+};
+
 commands["status"] = function(args){
   window.open('https://status.koad.sh', 'statusdashboard'); // ...I'm sorry
   return `opened 'status.koad.sh' in browser window`;
