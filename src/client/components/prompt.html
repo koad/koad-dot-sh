@@ -1,30 +1,34 @@
-
 <template name="Prompt">
-	{{#if username}}
-		<span class="brand-color">{{username}}</span>
-		<span class="gray"> in </span>
-		<span class="brand-color">{{hostname}}</span>
-		{{#if entity}}
-			<span class="gray"> with </span>
-			<span class="brand-color">{{entity}}</span>
-			<span class="gray">{{location}}</span>
+	<div class="prompt-container">
+		{{#if this.username}}
+			<span class="brand-color">{{this.username}}</span>
+			<span class="gray"> in </span>
+			<span class="brand-color">{{hostname}}</span>
+			{{#if entity}}
+				<span class="gray"> with </span>
+				<span class="brand-color">{{entity}}</span>
+				<span class="gray">{{location}}</span>
+			{{/if}}
+			{{#if time}}
+				<br />
+				<span class="gray">{{timestamp time}}</span>
+				<span class="{{state.class}}"> {{state.icon}} </span>
+				<span class="gray">{{command}}</span>
+			{{/if}}
+			<br>
 		{{/if}}
-		{{#if time}}
-			<br />
-			<span class="gray">{{timestamp time}}</span>
-			<span class="{{state.class}}"> {{state.icon}} </span>
-			<span class="gray">{{command}}</span>
-		{{/if}}
-	{{/if}}
+	</div>
 </template>
 
 <template name="input">
 	{{> Prompt environment}}
 	<div class="flex flex-row">
-	   <label htmlFor="prompt" className="flex-shrink">
-			<span class="gray">{{timestamp time}}</span>
-			<span class="green">❯&nbsp;</span>
-	   </label>
-		<input id="prompt" type="text" class="grey command-input flex-grow" autofocus="" autocomplete="off" spellcheck="false" value="">
+		<div class="prompt-container">
+		   <label htmlFor="prompt" className="flex-shrink">
+				<span class="gray">{{timestamp time}}</span>
+				<span class="green">❯</span>
+		   </label>
+			<input id="prompt" type="text" class="grey command-input flex-grow" autofocus="" autocomplete="off" spellcheck="false" value="">
+		</div>
 	</div>
 </template>

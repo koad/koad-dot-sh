@@ -1,5 +1,7 @@
+let lastCommandIndex = 0;
+
 Template.Prompt.helpers({
-  timestamp(date){
+	timestamp(date){
 	if(!date){
 		date = new Date();
 		tick1s.depend();
@@ -13,7 +15,7 @@ Template.Prompt.helpers({
 	stamp = stamp + ":" + ('0' + Number(dateToStamp.getMinutes())).slice(-2);
 	stamp = stamp + ":" + ('0' + Number(dateToStamp.getSeconds())).slice(-2);
 	return stamp;
-  }
+	}
 });
 
 Template.Prompt.onRendered(function () {
