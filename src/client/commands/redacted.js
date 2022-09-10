@@ -82,4 +82,7 @@ commands["store"] = function(args){ return NOT_AUTHORIZED; };
 commands["tldr"] = function(args){ return NOT_AUTHORIZED; };
 commands["upload"] = function(args){ return NOT_AUTHORIZED; };
 commands["whois"] = function(args){ return NOT_AUTHORIZED; };
+commands["whereami"] = function(args){ return NOT_AUTHORIZED; };
+commands["whereis"] = function(args){ return NOT_AUTHORIZED; };
+commands["logout"] = function(args){ return NOT_AUTHORIZED; };
 
