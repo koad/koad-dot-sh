@@ -105,7 +105,7 @@ Template.input.events({
 			if(!history) history = []
 			Session.set('entries', [...history, {
 				time: new Date(),
-				command: unparsed,
+				command: unparsed.trim(),
 				location: '~',
 				username: user,
 				hostname: 'wonderland',
@@ -175,7 +175,7 @@ window.addEventListener("keydown", (e) => {
 		let history = Session.get('entries');
 		if (lastCommandIndex > 0) lastCommandIndex = lastCommandIndex - 1;
 		if (lastCommandIndex > 0) {
-			document.getElementById("prompt").value = `${history[history.length - lastCommandIndex].command} `;
+			document.getElementById("prompt").value = `${history[history.length - lastCommandIndex].command}`;
 		} else document.getElementById("prompt").value = ``;
 	}
 
