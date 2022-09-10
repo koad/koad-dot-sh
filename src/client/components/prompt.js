@@ -55,44 +55,15 @@ Template.input.helpers({
 	}
 });
 
-lastCommandIndex = 0;
 Template.input.events({
-  'click .toggle-binary'() {
-  },
-  'keypress .command-input': async function(event) {
+	'click .toggle-binary'() {
+	},
+	'keypress .command-input': async function(event) {
 
 		event.stopImmediatePropagation();
 
-    // if (event.key === 'ArrowUp') {
-    //   event.preventDefault();
-    //   if (!commands.length) {
-    //     return;
-    //   }
-    //   lastCommandIndex = lastCommandIndex + 1;
-    //   if (index <= commands.length) {
-    //     setLastCommandIndex(index);
-    //     setCommand(commands[commands.length - index]);
-    //   }
-    // }
-
-    // if (event.key === 'ArrowDown') {
-    //   event.preventDefault();
-    //   if (!commands.length) {
-    //     return;
-    //   }
-    //   lastCommandIndex = lastCommandIndex - 1;
-    //   if (index > 0) {
-    //     setLastCommandIndex(index);
-    //     setCommand(commands[commands.length - index]);
-    //   } else {
-    //     setLastCommandIndex(0);
-    //     setCommand('');
-    //   }
-    // }
-
 		if (event.key === 'Enter') {
 			event.preventDefault();
-			console.log('Enter');
 
 			const unparsed = event.currentTarget.value;
 			const args = unparsed.split(' ');
@@ -105,6 +76,7 @@ Template.input.events({
 			let output = `${command}: ${COMMAND_NOT_FOUND}`
 
 			event.currentTarget.value = "";
+			lastCommandIndex = 0;
 
 			if(command == "exit"){
 				Session.set('entries', null);
@@ -142,4 +114,69 @@ Template.input.events({
 
 		}
 	},
+});
+
+// we attach to the window's events directly to override the browser's natural functions.
+window.addEventListener("keydown", (e) => {
+
+	// ensure we are scrolled down with the prompt visable
+	document.querySelector(".interface-container").scrollTo(0, document.querySelector(".interface-container").scrollHeight);
+
+	// ensure we are focused within the prompt
+	document.getElementById("prompt").focus();
+
+	// 114
+	if (event.keyCode === 114 ) {
+		event.preventDefault();
+	}
+
+	// ctrl-f
+	// prevent the site from being seachable via ctrl-f
+	if (event.ctrlKey && e.keyCode === 70) {
+		event.preventDefault();
+	}
+
+	// ctrl-l
+	// prevent focusing the location bar via ctrl-l, and clear the shell
+	if (event.ctrlKey && e.keyCode === 76) {
+		event.preventDefault();
+		Session.set('entries', null);
+		document.getElementById("prompt").value = "";
+	}
+
+	// tab
+	// complete the command if there is only one command option left
+	if (event.key === 'Tab') {
+		event.preventDefault();
+		let input = e.target.value;
+		if(input) {
+
+			const allCommands = ['clear', 'exit', ...Object.keys(commands)];
+			const result = allCommands.filter((entry) => {
+				if(entry.startsWith(input)) return true;
+			});
+
+			if (result.length === 1)  document.getElementById("prompt").value = `${result[0]} `;
+
+			// TODO:  if many results: find the most amount of matching chars and return that
+		};
+	};
+
+	if (event.key === 'ArrowUp') {
+		event.preventDefault();
+		let history = Session.get('entries');
+		if (!history.length || history.length == lastCommandIndex + 1  ) return;
+		lastCommandIndex = lastCommandIndex + 1;
+		document.getElementById("prompt").value = `${history[history.length - lastCommandIndex].command}`;
+	}
+
+	if (event.key === 'ArrowDown') {
+		event.preventDefault();
+		let history = Session.get('entries');
+		if (lastCommandIndex > 0) lastCommandIndex = lastCommandIndex - 1;
+		if (lastCommandIndex > 0) {
+			document.getElementById("prompt").value = `${history[history.length - lastCommandIndex].command} `;
+		} else document.getElementById("prompt").value = ``;
+	}
+
 });
