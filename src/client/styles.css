@@ -1,11 +1,12 @@
 :root {
-	 --application-hue: 220;         
-	 --application-saturation: 16;  
-	 --application-brightness: 22; 
-	 --text-hue: 220;         
-	 --text-saturation: 16;  
-	 --text-brightness: 75; 
-	 --application-transparency:  255;
+	--application-hue: 220;         
+	--application-saturation: 16;  
+	--application-brightness: 22; 
+	--text-hue: 220;         
+	--text-saturation: 16;  
+	--text-brightness: 75; 
+	--application-transparency:  255;
+	--bs-body-line-height: 1.15;
 }
 
 @font-face {
