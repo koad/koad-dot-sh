@@ -5,7 +5,7 @@ if(!config) return;
 NOT_AUTHORIZED=`unfortunately, you don't have enough power to do that.`;
 COMMAND_NOT_FOUND=`command not found`;
 LOGIN_PROMPT=`login`;
-KOAD_IO_LIGHT_VERSION=`koad:lite-v8 v0.0.149`
+KOAD_IO_LIGHT_VERSION=`koad:io-light v0.0.161`
 
 
 DEVELOPER_CREDITS=`
@@ -19,7 +19,7 @@ build using the gifts from the following...
 
 GUEST_HELP=`showing available guest commands, use command 'help --all' to see all system commands.
 
-about, alice, astro, banner, contact, credits, discord, exit, help, live, sponsor, status, version, whoami.
+about, alice, astro, banner, contact, credits, disco, exit, help, live, scan, sponsor, status, version, wallet, whoami.
 
 [tab]: command line completion.
 [ctrl+l]/clear: clear terminal.
@@ -30,18 +30,18 @@ SPONSORSHIPS=`thank you for your interest,
 
 you can support my work by <a class="text-light-blue dark:text-dark-blue underline" href="${config.tip_jar.github}" target="_blank">sponsoring me on github</a> with any amount either one-time or monthly.
 
-alternatively, several choices exist for those who want me to give them unfeathered attention.
+alternatively, for those who want me to give them unfettered attention this is the ballpark.
 
 # insiders
 buffer - have a call with me for an hour > $500 
 queue - take my focus for a day > $2500 USD
-inturrupt - take me away from my metaverse for an entire week > $10k USD
+interrupt - take me away from my metaverse for an entire week > $10k USD
 reboot - make me the king of your kingdom for a month > 100k USD
 `;
 
 
 ABOUT_KOAD_IO_LIGHT=`
-koad:io-light v0.0.158
+${KOAD_IO_LIGHT_VERSION}
 <a class="text-light-blue dark:text-dark-blue underline" href="https://github.com/koad/io-light" target="_blank">github://koad/io-light</a>
 
 An essentials only command prompt for the king while he is away from the kingdom.
