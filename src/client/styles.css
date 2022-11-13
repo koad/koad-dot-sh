@@ -111,3 +111,7 @@ input{
 	overflow-x: auto; 
 	min-width: 658px;
 }
+
+.underline{
+	text-decoration: underline;
+}
