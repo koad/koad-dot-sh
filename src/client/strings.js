@@ -93,10 +93,10 @@ CONTACT_CARD=`
        @@@@@@@@@@@        @@@@@@@%           %@@@@@@@@@@         | -----------
          *@@@@@@@@@@*    *@@@@@@@          @@@@@@@@@@&           |  TIP JAR 
             @@@@@@@@@@@  @@@@@@@/       #@@@@@@@@@@              |  <u><a href="${config.tip_jar.github}" target="_blank">${config.tip_jar.github}</a></u>
-               @@@@@@@% /@@@@@@@        *@@@@@@@&                | ﴑ <u><a href="https://ecoincore.com/address/bc1qvdwh05qzmp2va220tzzdeaarseqgh9dty5zxaq" target="_blank">Bitcoin - bc1qvdwh05qzmp2va220tzzdeaarseqgh9dty5zxaq</a></u>
-                 @@@    @@@@@@@            @@@                   | Ł <u><a href="https://ecoincore.com/address/LZ9ThKdpyQoBoCcnSeytiXVZ7BJZ6aUgDw" target="_blank">Litecoin - LZ9ThKdpyQoBoCcnSeytiXVZ7BJZ6aUgDw</a></u>
-                       %@@@@@@@                                  | Ð <u><a href="https://ecoincore.com/address/DRtawKXMGyynB5Lr5uStHJNUA4dvQWtiWe" target="_blank">Dogecoin - DRtawKXMGyynB5Lr5uStHJNUA4dvQWtiWe</a></u>
-                       @@@@@@@                                   | ε <u><a href="https://ecoincore.com/address/CduFQRWgT757NGcLbUJeL731RNZmz7PkCo" target="_blank">Canada eCoin - CduFQRWgT757NGcLbUJeL731RNZmz7PkCo</a></u>
+               @@@@@@@% /@@@@@@@        *@@@@@@@&                | ﴑ <u><a href="https://btc.ecoincore.com/address/bc1qvdwh05qzmp2va220tzzdeaarseqgh9dty5zxaq" target="_blank">Bitcoin - bc1qvdwh05qzmp2va220tzzdeaarseqgh9dty5zxaq</a></u>
+                 @@@    @@@@@@@            @@@                   | Ł <u><a href="https://ltc.ecoincore.com/address/LZ9ThKdpyQoBoCcnSeytiXVZ7BJZ6aUgDw" target="_blank">Litecoin - LZ9ThKdpyQoBoCcnSeytiXVZ7BJZ6aUgDw</a></u>
+                       %@@@@@@@                                  | Ð <u><a href="https://doge.ecoincore.com/address/DRtawKXMGyynB5Lr5uStHJNUA4dvQWtiWe" target="_blank">Dogecoin - DRtawKXMGyynB5Lr5uStHJNUA4dvQWtiWe</a></u>
+                       @@@@@@@                                   | ε <u><a href="https://cdn.ecoincore.com/address/CduFQRWgT757NGcLbUJeL731RNZmz7PkCo" target="_blank">Canada eCoin - CduFQRWgT757NGcLbUJeL731RNZmz7PkCo</a></u>
 `;
 
 
