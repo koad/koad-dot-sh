@@ -1,6 +1,4 @@
 
-
-
 commands["directory"] = function(args){
   window.open('https://canadaecoin.directory', 'indieexpress'); 
   return `opened indie express via example 'canadaecoin.directory' in browser window`;
@@ -54,4 +52,9 @@ commands["status"] = function(args){
 commands["wallet"] = function(args){
   window.open('https://ecoincore.com', 'ecoincore'); 
   return `opened 'ecoincore.com' in browser window`;
+};
+
+commands["hire"] = function(args){
+  window.open('https://my.indeed.com/p/jasonz-ym23gv8'); 
+  return `opened 'my.indeed.com' in browser window`;
 };
