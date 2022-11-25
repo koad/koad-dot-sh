@@ -19,7 +19,7 @@ build using the gifts from the following...
 
 GUEST_HELP=`showing available guest commands, use command 'help --all' to see all system commands.
 
-about, alice, astro, banner, contact, credits, disco, exit, help, live, scan, sponsor, status, version, wallet, whoami.
+about, banner, contact, credits, disco, exit, help, hire, live, sponsor, status, version, whoami.
 
 [tab]: command line completion.
 [ctrl+l]/clear: clear terminal.
