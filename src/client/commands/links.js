@@ -10,7 +10,7 @@ commands["disco"] = function(args){
 };
 
 commands["discord"] = function(args){
-  window.open('https://discord.gg/Qnhwtqmcb2', '_blank'); 
+  window.open('https://discord.gg/Qnhwtqmcb2', 'discord'); 
   return `opened invite to koad's discord channel in browser window `;
 };
 
@@ -25,7 +25,7 @@ commands["github"] = function(args){
 };
 
 commands["keybase"] = function(args){
-  window.open('https://keybase.io/koad', 'koadlive'); 
+  window.open('https://keybase.io/koad', 'keybase'); 
   return `opened 'keybase.io/koad' in browser window`;
 };
 
@@ -35,7 +35,7 @@ commands["live"] = function(args){
 };
 
 commands["matrix"] = function(args){
-  window.open('https://matrix.to/#/#live:koad.sh', '_blank'); 
+  window.open('https://matrix.to/#/#live:koad.sh', 'matrix'); 
   return `opened invite to koad's live matrix space in browser window `;
 };
 
