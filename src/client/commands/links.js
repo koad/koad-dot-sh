@@ -30,8 +30,8 @@ commands["keybase"] = function(args){
 };
 
 commands["live"] = function(args){
-  window.open('https://live.koad.sh', 'koadlive'); 
-  return `opened 'live.koad.sh' in browser window`;
+  window.open('https://koad.live', 'koadlive'); 
+  return `opened 'koad.live' in browser window`;
 };
 
 commands["matrix"] = function(args){
@@ -47,4 +47,29 @@ commands["scan"] = function(args){
 commands["wallet"] = function(args){
   window.open('https://ecoincore.com', 'ecoincore'); 
   return `opened 'ecoincore.com' in browser window`;
+};
+
+commands["onlyfans"] = function(args){
+  window.open('https://onlyfans.com/kingofalldata', 'onlyfans');
+  return `opened 'onlyfans' in browser window, lol.`;
+};
+
+commands["myspace"] = function(args){
+  window.open('https://myspace.com/koad', 'myspace'); 
+  return `opened 'myspace.com/koad' in browser window`;
+};
+
+commands["beatify"] = function(args){
+  window.open('https://beatify.audio/koad', 'beatify'); 
+  return `opened 'beatify.audio/koad' in browser window`;
+};
+
+commands["nostr"] = function(args){
+  window.open('https://nostter.app/nprofile1qqsrjpxytecy4mz5485mzwn6lupyrgwy9pk33sw7f5ym3e7nw6qykqs9t8uvp', 'nostr'); 
+  return `opened nostr in browser window`;
+};
+
+commands["pgp"] = function(args){
+  window.open('https://keybase.io/koad/pgp_keys.asc?fingerprint=a07f8cfecbf6b982eedac4f362d5c4866c247e00', 'keybase'); 
+  return `opened koad's pgp key in a new browser window`;
 };
