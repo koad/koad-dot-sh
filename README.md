@@ -74,9 +74,9 @@ astro restart koad.sh
 ```
 
 ### stop production
-tell the server to restart the process
+tell the server to stop the process
 ```bash
-astro restart koad.sh
+astro stop koad.sh
 ```
 
 
