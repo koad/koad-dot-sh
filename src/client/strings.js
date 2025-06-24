@@ -17,13 +17,19 @@ build using the gifts from the following...
 `;
 
 
-GUEST_HELP=`showing available guest commands, use command 'help --all' to see all system commands.
+GUEST_HELP = `showing available guest commands.  
+type <code>help --all</code> to see all system commands.
 
-about, banner, contact, credits, disco, exit, help, live, sponsor, version, whoami.
+**Available guest commands:**
 
-[tab]: command line completion.
-[ctrl+l]/clear: clear terminal.
+about, banner, contact, help, live, sponsor, version, whoami
+
+---
+
+[tab]       → command line completion  
+[ctrl+l]    → clear terminal  
 `;
+
 
 
 SPONSORSHIPS=`thank you for your interest, 
@@ -63,9 +69,34 @@ o888o o888o 'Y8bod8P' 'Y888""8o 'Y8bod88P Y8P 8""888P' o888o o888o
 ..    .-.. --- ...- .    -.-- --- ..- 
 `;
 
-GREETING=`${BANNER}
 
-Type 'help' to see the list of commands.`;
+GREETING = `${BANNER}
+
+## Welcome, traveler.
+
+I build sovereign apps that run locally, talk across the internet 
+via encrypted hole-punches, and never send data into the cloud.
+
+### 🔧 Current Projects
+
+- **koad:io** — Local-first Command-and-Control Framework  
+  <a href="https://github.com/koad/io" target="_blank">github.com/koad/io</a>
+
+- **eCoinCore** — Sovereign Blockchain Deployment/Management
+  <a href="https://ecoincore.com" target="_blank">ecoincore.com</a>
+
+- **Beatify** — Decentralized MetaMedia Platform  
+  <a href="https://www.beatify.audio/koad" target="_blank">beatify.audio/koad</a>
+
+- **Canada eCoin** — Canadian Cryptocurrency Experiment  
+  <a href="https://ourcoin.ca" target="_blank">ourcoin.ca</a>
+
+📖 Have you read my book? -- <a href="https://kingofalldata.com" target="_blank">kingofalldata.com</a>
+
+---
+
+Type <code>help</code> to see available commands.
+`;
 
 
 LOGIN_BANNER=`${BANNER}
