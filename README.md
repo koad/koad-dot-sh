@@ -48,18 +48,17 @@ to the locally running runtime environment
 astro shell
 ```
 
-### send to server
-deployment skeleton to production server
-```bash
-astro deploy site koad.sh
-```
-
-
-### build and upload
+### build and upload to server
 production package to production host
 ```bash
 astro build site koad.sh
 astro upload site koad.sh
+```
+
+### deploy package sent to server
+deployment skeleton to production server
+```bash
+astro deploy site koad.sh
 ```
 
 ### start production
