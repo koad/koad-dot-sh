@@ -109,10 +109,14 @@ input{
 
 .output-text{
 	white-space: pre-wrap; 
-	overflow-x: auto; 
 	min-width: 658px;
 }
 
 .underline{
 	text-decoration: underline;
+}
+
+code {
+    color: white;
+    background-color: #f9f2f422;
 }
