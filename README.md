@@ -9,7 +9,7 @@ this source code is what makes up the site at [koad.sh](https://koad.sh).
 
 This website can be thought of as my master social profile, resume and portfolio.
 
-originally I cloned [Cveinnt's LiveTerm](https://github.com/Cveinnt/LiveTerm) and thought it was awesome, which it is.  But I don't like to over-complicate simple apps with skill-expensive frameworks so when the great rogers outage of 2022 happened and I had no access to blockchains (which is what I normally work on) I decided to port this into a [meteorjs](https://www.meteor.com/) app so it fits better into world of wonders.
+originally I cloned [Cveinnt's LiveTerm](https://github.com/Cveinnt/LiveTerm) and thought it was awesome, which it is.  But I don't like to over-complicate simple apps with skill-expensive frameworks so when the great rogers outage of 2022 happened and I had no access to blockchains (which is what I normally work on) I decided to port this into a [meteorjs](https://www.meteor.com/) app so it fits better into my world of wonders.
 
 ### cheers.
 
