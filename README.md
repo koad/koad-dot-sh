@@ -84,7 +84,7 @@ astro stop koad.sh
 
 ## reference:
 
-astro is my personal digital assistant I spawned using [koad:io](https://github.com/koad/io/).
+astro is my personal context agent I spawned using [koad:io](https://github.com/koad/io/).
 - [github://koad/io/](https://github.com/koad/io/)
 - [book://koad-io/entity](https://book.koad.sh/reference/koad-io/entity/?h=koad+io#what)
 
