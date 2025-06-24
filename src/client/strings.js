@@ -5,7 +5,7 @@ if(!config) return;
 NOT_AUTHORIZED=`unfortunately, you don't have enough power to do that.`;
 COMMAND_NOT_FOUND=`command not found`;
 LOGIN_PROMPT=`login`;
-KOAD_IO_LIGHT_VERSION=`koad:io-light v0.0.162`
+KOAD_IO_LIGHT_VERSION=`koad:io-light v0.0.188`
 
 
 DEVELOPER_CREDITS=`
